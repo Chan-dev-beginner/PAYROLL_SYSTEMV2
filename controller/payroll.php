@@ -175,7 +175,7 @@ if (isset($_GET['finalize'])) {
         if ($payroll && !empty($payroll['email'])) {
             $payload = [
                 'to_email' => $payroll['email'],
-                'subject' => 'Payroll Finalized',
+                'subject' => 'PAYCHECK',
                 'message' => '<p>Hi ' . htmlspecialchars($payroll['employee_name']) . ',</p><p>Your payroll for <strong>' . htmlspecialchars($payroll['month_year']) . '</strong> has been finalized.</p><p>Net pay: ' . number_format((float)$payroll['net_pay'], 2) . '</p>'
             ];
 

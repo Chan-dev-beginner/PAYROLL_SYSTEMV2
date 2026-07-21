@@ -1,9 +1,4 @@
 <?php
-/*
- * Minimal PHPMailer-compatible class stub for this project.
- * It sends mail using PHP's mail() function when SMTP credentials are not configured.
- * For full SMTP support, replace this with the real PHPMailer library.
- */
 class PHPMailer
 {
     public $Host = 'localhost';
@@ -178,6 +173,7 @@ class PHPMailer
         $headers = [];
         $headers[] = 'From: ' . $this->FromName . ' <' . $this->From . '>';
         $headers[] = 'To: ' . implode(', ', $toList);
+        $headers[] = 'Subject: ' . $this->Subject;
         if ($this->isHTML) {
             $headers[] = 'Content-Type: text/html; charset=UTF-8';
         } else {
