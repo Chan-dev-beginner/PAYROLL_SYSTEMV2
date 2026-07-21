@@ -1,0 +1,19 @@
+//how to insert new attendance
+
+// INSERT INTO attendance (
+//id,
+//employee_id,
+//date,
+//time_in,
+//time_out,
+//hours_worked,
+//status
+//) VALUES (
+ //22,
+ //5,
+ //'2026-06-03',
+ //'08:00:00',
+ //'20:00:00',
+ //12.00,
+ //'present'
+//);
